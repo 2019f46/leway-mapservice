@@ -8,6 +8,7 @@
         "outDir": "./dist",
         "baseUrl": "./src"
     },
+    "types": ["jest"],
     "include": [
         "src/**/*.ts"
     ],
