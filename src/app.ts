@@ -1,6 +1,7 @@
 import * as express from "express";
 import * as bodyParser from "body-parser";
 import testRouter from "./Controllers/testController";
+import mapRouter from "./Controllers/mapController";
 
 class App {
 
@@ -24,6 +25,7 @@ class App {
 
     private setRoutes(): void{
         this.app.use('/api/test', testRouter);
+        this.app.use('api/map', mapRouter);
     }
 }
 
