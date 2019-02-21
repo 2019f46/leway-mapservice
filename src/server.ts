@@ -1,7 +1,7 @@
 import app from "./app";
 import * as cors from "cors";
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Enable cors - default (any) till we know where it will be hosted
 app.use(cors());
