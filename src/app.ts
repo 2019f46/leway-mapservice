@@ -2,6 +2,7 @@ import * as express from "express";
 import * as bodyParser from "body-parser";
 import testRouter from "./Controllers/testController";
 import mapRouter from "./Controllers/mapController";
+import healthRouter from "./Controllers/healthController";
 
 class App {
 
@@ -9,23 +10,23 @@ class App {
 
     constructor() {
         this.app = express();
-        this.config();        
+        this.config();
     }
 
-    private config(): void{
+    private config(): void {
         // support application/json type post data
         this.app.use(bodyParser.json());
         //support application/x-www-form-urlencoded post data
         this.app.use(bodyParser.urlencoded({ extended: false }));
 
-
         // Setup routes
         this.setRoutes();
     }
 
-    private setRoutes(): void{
+    private setRoutes(): void {
         this.app.use('/api/test', testRouter);
-        this.app.use('api/map', mapRouter);
+        this.app.use('/api/map', mapRouter);
+        this.app.use('/api/health', healthRouter);
     }
 }
 
