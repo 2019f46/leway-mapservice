@@ -1,4 +1,7 @@
 import { Request, Response, Router } from 'express';
+import * as terminus from "@godaddy/terminus";
+import { Mongoose, mongo } from 'mongoose';
+import { MapSchema } from "../Models/map.model";
 
 class HealthController {
     public mapRouter: Router;
@@ -9,7 +12,7 @@ class HealthController {
     }
 
     public getHealth(req: Request, res: Response, next) {
-        res.send('Its healthy');
+        res.send(MapSchema);
     }
 
     public route() {
@@ -18,3 +21,4 @@ class HealthController {
 }
 
 export default new HealthController().mapRouter;
+

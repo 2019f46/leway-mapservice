@@ -1,6 +1,6 @@
 import app from "./app";
 import * as cors from "cors";
-import { Mongoose, connect, connection } from "mongoose";
+import { connect, connection } from "mongoose";
 
 const PORT = process.env.PORT || 3000;
 
