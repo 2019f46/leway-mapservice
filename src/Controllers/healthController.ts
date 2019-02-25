@@ -1,7 +1,5 @@
 import { Request, Response, Router } from 'express';
-import * as terminus from "@godaddy/terminus";
-import { Mongoose, mongo } from 'mongoose';
-import { MapSchema } from "../Models/map.model";
+import { connection } from 'mongoose';
 
 class HealthController {
     public mapRouter: Router;
@@ -12,7 +10,26 @@ class HealthController {
     }
 
     public getHealth(req: Request, res: Response, next) {
-        res.send(MapSchema);
+        let obj: { status: "Disconnected" | "Connected" | "Connecting" | "Disconnecting", statusCode: number } = { status: undefined, statusCode: undefined };
+
+        switch (connection.readyState) {
+            case 0:
+                obj.status = "Disconnected";
+                break;
+            case 1:
+                obj.status = "Connected"
+                break;
+            case 2:
+                obj.status = "Connecting"
+                break;
+            default:
+                obj.status = "Disconnecting"
+                break;
+        }
+
+        obj.statusCode = connection.readyState;
+        let colls = connection.collections;
+        res.send(JSON.stringify(obj));
     }
 
     public route() {
