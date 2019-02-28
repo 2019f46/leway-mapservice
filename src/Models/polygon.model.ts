@@ -1,11 +1,11 @@
-import { Schema, Document, model } from "mongoose";
+import { Document, Schema, Model, model } from "mongoose";
 
 export interface ICoordModel extends Document{
     x: Number
     y: Number
 }
 
-let CoordSchema = new Schema({
+export var CoordSchema = new Schema({
   x: {
     type: Number,
     required: true
@@ -26,3 +26,5 @@ export var PolySchema: Schema = new Schema({
     required: true
   }
 });
+
+export const polygon: Model<IPolyModel> = model<IPolyModel>("polygon", PolySchema);
