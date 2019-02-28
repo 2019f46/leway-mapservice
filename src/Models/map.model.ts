@@ -1,12 +1,12 @@
-import {Document, Schema, Model, model} from "mongoose";
-import {IPolyModel, PolySchema} from "./polygon.model";
+import { Document, Schema, Model, model } from "mongoose";
+import { IPolyModel, PolySchema } from "./polygon.model";
 
 export interface IMapModel extends Document {
-    outerPolygon: IPolyModel
-    innerPolygon: [IPolyModel]
+  outerPolygon: IPolyModel
+  innerPolygon: [IPolyModel]
 }
 
-export var MapSchema: Schema = new Schema({
+export const MapSchema: Schema = new Schema({
   outerPolygon: {
     type: PolySchema,
     required: true
