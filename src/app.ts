@@ -24,7 +24,6 @@ class App {
     }
 
     private setRoutes(): void {
-        this.app.use('/api/test', testRouter);
         this.app.use('/api/map', mapRouter);
         this.app.use('/api/health', healthRouter);
     }
