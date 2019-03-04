@@ -16,7 +16,7 @@ class MapController {
         res.status(500).send(err);
       }
       else{
-        res.send(map[0]); // So far, always at place 0
+        res.json(map[0]).send(); // So far, always at place 0
       }
     });
   }
