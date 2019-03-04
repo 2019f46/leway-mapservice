@@ -1,6 +1,5 @@
 import * as express from "express";
 import * as bodyParser from "body-parser";
-import testRouter from "./Controllers/testController";
 import mapRouter from "./Controllers/mapController";
 import healthRouter from "./Controllers/healthController";
 
