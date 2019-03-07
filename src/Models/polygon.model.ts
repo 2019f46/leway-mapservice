@@ -1,10 +1,14 @@
 import { Document, Schema, Model, model } from "mongoose";
 
-export interface ICoordModel extends Document{
-    x: Number
-    y: Number
+/** Coordinate interface, used to define the coordinates of the points in polygons. */
+export interface ICoordModel extends Document {
+  /** The X coordinate */
+  x: Number;
+  /** The Y coordinate */
+  y: Number;
 }
 
+/** Mongoose schema, that follows the ICoordModel interface. */
 export var CoordSchema = new Schema({
   x: {
     type: Number,
@@ -16,10 +20,13 @@ export var CoordSchema = new Schema({
   }
 });
 
-export interface IPolyModel extends Document{
-    points: [ICoordModel]
+/** Polygon interface, used to define polygons. */
+export interface IPolyModel extends Document {
+  /** List of points, that make up the polygon. */
+  points: [ICoordModel];
 }
 
+/** Mongoose schema, that follows the IPolyModel interface. */
 export var PolySchema: Schema = new Schema({
   points: {
     type: [CoordSchema],
@@ -27,4 +34,7 @@ export var PolySchema: Schema = new Schema({
   }
 });
 
-export const polygon: Model<IPolyModel> = model<IPolyModel>("polygon", PolySchema);
+export const polygon: Model<IPolyModel> = model<IPolyModel>(
+  "polygon",
+  PolySchema
+);

@@ -22,6 +22,7 @@ class App {
         this.setRoutes();
     }
 
+    /** Sets the routers to their designated routes */
     private setRoutes(): void {
         this.app.use('/api/map', mapRouter);
         this.app.use('/api/health', healthRouter);
