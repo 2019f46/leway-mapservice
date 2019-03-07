@@ -8,10 +8,10 @@ import { connection } from "mongoose";
  * The controller will check the database connection status, and return JSON object with this information.
  */
 class HealthController {
-  public mapRouter: Router;
+  public healthRouter: Router;
 
   constructor() {
-    this.mapRouter = Router();
+    this.healthRouter = Router();
     this.route();
   }
 
@@ -49,8 +49,8 @@ class HealthController {
 
   /** Sets the routes for the /api/health endpoint */
   public route() {
-    this.mapRouter.get("/", this.getHealth);
+    this.healthRouter.get("/", this.getHealth);
   }
 }
 
-export default new HealthController().mapRouter;
+export default new HealthController().healthRouter;
