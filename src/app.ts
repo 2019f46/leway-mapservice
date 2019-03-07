@@ -3,6 +3,15 @@ import * as bodyParser from "body-parser";
 import mapRouter from "./Controllers/mapController";
 import healthRouter from "./Controllers/healthController";
 
+/**
+ * MAP SERVICE
+ * The Map Service will enable you to get and update the store map.
+ * It has two endpoints:
+ * - /api/map
+ *   Here you can GET the map, and PUT an updated one.
+ * - /api/health
+ *   Here you can monitor the status of the service, and the db connection.
+ */
 class App {
 
     public app: express.Application;
