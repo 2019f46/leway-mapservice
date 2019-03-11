@@ -9,7 +9,7 @@ export interface IMapModel extends Document {
   /** The outer boundatires of the store, i.e. the walls. */
   outerPolygon: IPolyModel
   /** The inner polygons. A list of all the polygons inside the store, i.e. the shelves. */
-  innerPolygon: [IPolyModel]
+  innerPolygon: IPolyModel[]
 }
 
 /** Mongoose schema, that follows the IMapModel interface */
