@@ -5,7 +5,13 @@ import { connect, connection } from "mongoose";
 const PORT = process.env.PORT || 3000;
 
 // Enable cors - default (any) till we know where it will be hosted
-app.use(cors());
+app.use(cors({
+  allowedHeaders: ["sessionId", "Content-Type"],
+  exposedHeaders: "sessionId",
+  origin: "*",
+  methods: "GET, POST, PUT, DELETE",
+  preflightContinue: false
+}));
 
 // DB Setup
 const dbName = "wayfinder";

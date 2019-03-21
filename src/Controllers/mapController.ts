@@ -26,7 +26,10 @@ class MapController {
         res.status(500).send(err);
       }
       else {
-        res.json(map[0]).send(); // So far, always at place 0
+        res.status(200).header("Access-Control-Allow-Origin", "*")
+          .header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE")
+          .header("Access-Control-Allow-Headers", "SessionId, Content-Type")
+          .send(map[0]);
       }
     });
   }

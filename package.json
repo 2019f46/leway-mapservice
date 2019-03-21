@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@godaddy/terminus": "^4.1.0",
+    "@types/cors": "^2.8.4",
     "@types/express": "^4.16.1",
     "@types/jest": "^24.0.4",
     "@types/mockingoose": "^2.11.0",
