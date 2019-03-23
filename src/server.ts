@@ -4,7 +4,7 @@ import { connect, connection } from "mongoose";
 
 const PORT = process.env.PORT || 3000;
 
-// Enable cors - default (any) till we know where it will be hosted
+// Enable cors
 app.use(cors({
   allowedHeaders: ["sessionId", "Content-Type"],
   exposedHeaders: "sessionId",
