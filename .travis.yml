@@ -6,8 +6,8 @@ script:
 - npm run test
 deploy:
   on:
-    branch: feature/pipeline
+    branch: master
   provider: heroku
   api_key:
-    secure: "f2024b66-887d-4d12-9b14-30171720affd"
+    secure: "83b487b9-c812-4d4d-80af-6ed3d3096f86"
   app: wf-backend-mapservice
