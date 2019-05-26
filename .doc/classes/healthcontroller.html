@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MapController | mapservice</title>
+	<title>HealthController | mapservice</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_controllers_mapcontroller_.html">&quot;Controllers/mapController&quot;</a>
-				</li>
-				<li>
-					<a href="_controllers_mapcontroller_.mapcontroller.html">MapController</a>
+					<a href="healthcontroller.html">HealthController</a>
 				</li>
 			</ul>
-			<h1>Class MapController</h1>
+			<h1>Class HealthController</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +69,10 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>This map controller will serve the endpoint /api/map</p>
+						<p>The health controller will display the health status of the service.
+							Contains all functions for endpoint /api/health
+							The service is down if anything else than status 200 is returned.
+						The controller will check the database connection status, and return JSON object with this information.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">MapController</span>
+						<span class="target">HealthController</span>
 					</li>
 				</ul>
 			</section>
@@ -91,21 +91,20 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported"><a href="_controllers_mapcontroller_.mapcontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported"><a href="healthcontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="_controllers_mapcontroller_.mapcontroller.html#maprouter" class="tsd-kind-icon">map<wbr>Router</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="healthcontroller.html#healthrouter" class="tsd-kind-icon">health<wbr>Router</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_controllers_mapcontroller_.mapcontroller.html#getmap" class="tsd-kind-icon">get<wbr>Map</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_controllers_mapcontroller_.mapcontroller.html#route" class="tsd-kind-icon">route</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_controllers_mapcontroller_.mapcontroller.html#updatemap" class="tsd-kind-icon">update<wbr>Map</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="healthcontroller.html#gethealth" class="tsd-kind-icon">get<wbr>Health</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="healthcontroller.html#route" class="tsd-kind-icon">route</a></li>
 							</ul>
 						</section>
 					</div>
@@ -117,16 +116,16 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Map<wbr>Controller<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_controllers_mapcontroller_.mapcontroller.html" class="tsd-signature-type">MapController</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Health<wbr>Controller<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="healthcontroller.html" class="tsd-signature-type">HealthController</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Controllers/mapController.ts:8</li>
+									<li>Defined in <a href="https://github.com/2019f46/leway-mapservice/blob/7d0cdf0/src/Controllers/healthController.ts#L11">Controllers/healthController.ts:11</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_controllers_mapcontroller_.mapcontroller.html" class="tsd-signature-type">MapController</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="healthcontroller.html" class="tsd-signature-type">HealthController</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -134,12 +133,12 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="maprouter" class="tsd-anchor"></a>
-					<h3>map<wbr>Router</h3>
-					<div class="tsd-signature tsd-kind-icon">map<wbr>Router<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Router</span></div>
+					<a name="healthrouter" class="tsd-anchor"></a>
+					<h3>health<wbr>Router</h3>
+					<div class="tsd-signature tsd-kind-icon">health<wbr>Router<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Router</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Controllers/mapController.ts:8</li>
+							<li>Defined in <a href="https://github.com/2019f46/leway-mapservice/blob/7d0cdf0/src/Controllers/healthController.ts#L11">Controllers/healthController.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -147,22 +146,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="getmap" class="tsd-anchor"></a>
-					<h3>get<wbr>Map</h3>
+					<a name="gethealth" class="tsd-anchor"></a>
+					<h3>get<wbr>Health</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Map<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span>, next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Health<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span>, next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Controllers/mapController.ts:22</li>
+									<li>Defined in <a href="https://github.com/2019f46/leway-mapservice/blob/7d0cdf0/src/Controllers/healthController.ts#L25">Controllers/healthController.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>GetMap maps to GET /api/map
-									Will get the map from the database</p>
+									<p>getHealth maps to GET /api/health.
+									Checks the db status.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -176,7 +175,7 @@
 								<li>
 									<h5>res: <span class="tsd-signature-type">Response</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Will return the map structure, see map.model</p>
+										<p>Returns a JSON object</p>
 									</div>
 								</li>
 								<li>
@@ -200,58 +199,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Controllers/mapController.ts:54</li>
+									<li>Defined in <a href="https://github.com/2019f46/leway-mapservice/blob/7d0cdf0/src/Controllers/healthController.ts#L51">Controllers/healthController.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sets the routes for endpoint /api/map</p>
+									<p>Sets the routes for the /api/health endpoint</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="updatemap" class="tsd-anchor"></a>
-					<h3>update<wbr>Map</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Map<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span>, next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in Controllers/mapController.ts:41</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>UpdateMap maps to PUT /api/map
-									Will update the database with the new map</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>req: <span class="tsd-signature-type">Request</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Body must conatin a new map JSON object</p>
-									</div>
-								</li>
-								<li>
-									<h5>res: <span class="tsd-signature-type">Response</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Returns status 204 if succesful</p>
-									</div>
-								</li>
-								<li>
-									<h5>next: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Not used</p>
-									</div>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -264,52 +219,76 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_controllers_healthcontroller_.html">"<wbr>Controllers/health<wbr>Controller"</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_controllers_mapcontroller_.html">"<wbr>Controllers/map<wbr>Controller"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_models_map_model_.html">"<wbr>Models/map.model"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_models_polygon_model_.html">"<wbr>Models/polygon.model"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_app_.html">"app"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_server_.html">"server"</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="app.html" class="tsd-kind-icon">App</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_controllers_mapcontroller_.mapcontroller.html" class="tsd-kind-icon">Map<wbr>Controller</a>
+					<li class="current tsd-kind-class tsd-is-not-exported">
+						<a href="healthcontroller.html" class="tsd-kind-icon">Health<wbr>Controller</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
-								<a href="_controllers_mapcontroller_.mapcontroller.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="healthcontroller.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-								<a href="_controllers_mapcontroller_.mapcontroller.html#maprouter" class="tsd-kind-icon">map<wbr>Router</a>
+								<a href="healthcontroller.html#healthrouter" class="tsd-kind-icon">health<wbr>Router</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-								<a href="_controllers_mapcontroller_.mapcontroller.html#getmap" class="tsd-kind-icon">get<wbr>Map</a>
+								<a href="healthcontroller.html#gethealth" class="tsd-kind-icon">get<wbr>Health</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-								<a href="_controllers_mapcontroller_.mapcontroller.html#route" class="tsd-kind-icon">route</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-								<a href="_controllers_mapcontroller_.mapcontroller.html#updatemap" class="tsd-kind-icon">update<wbr>Map</a>
+								<a href="healthcontroller.html#route" class="tsd-kind-icon">route</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="mapcontroller.html" class="tsd-kind-icon">Map<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/icoordmodel.html" class="tsd-kind-icon">ICoord<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/imapmodel.html" class="tsd-kind-icon">IMap<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ipolymodel.html" class="tsd-kind-icon">IPoly<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#coordschema" class="tsd-kind-icon">Coord<wbr>Schema</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#map" class="tsd-kind-icon">Map</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#mapschema" class="tsd-kind-icon">Map<wbr>Schema</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#port" class="tsd-kind-icon">PORT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#polyschema" class="tsd-kind-icon">Poly<wbr>Schema</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#dbname" class="tsd-kind-icon">db<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#dbpassword" class="tsd-kind-icon">db<wbr>Password</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#dburl" class="tsd-kind-icon">db<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#dbuser" class="tsd-kind-icon">db<wbr>User</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#polygon" class="tsd-kind-icon">polygon</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IMapModel | mapservice</title>
+	<title>IPolyModel | mapservice</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_models_map_model_.html">&quot;Models/map.model&quot;</a>
-				</li>
-				<li>
-					<a href="_models_map_model_.imapmodel.html">IMapModel</a>
+					<a href="ipolymodel.html">IPolyModel</a>
 				</li>
 			</ul>
-			<h1>Interface IMapModel</h1>
+			<h1>Interface IPolyModel</h1>
 		</div>
 	</div>
 </header>
@@ -72,9 +69,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Map model interface.
-							Contains the outerpolygon, which will define the boundaries of the store (walls),
-						and inner polygons, which is a list of polygons inside the store (shelves)</p>
+						<p>Polygon interface, used to define polygons.</p>
 					</div>
 				</div>
 			</section>
@@ -85,7 +80,7 @@
 						<span class="tsd-signature-type">Document</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">IMapModel</span>
+								<span class="target">IPolyModel</span>
 							</li>
 						</ul>
 					</li>
@@ -98,42 +93,41 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#__v" class="tsd-kind-icon">__v</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#base" class="tsd-kind-icon">base</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#basemodelname" class="tsd-kind-icon">base<wbr>Model<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#collection" class="tsd-kind-icon">collection</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#db" class="tsd-kind-icon">db</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#discriminators" class="tsd-kind-icon">discriminators</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_models_map_model_.imapmodel.html#innerpolygon" class="tsd-kind-icon">inner<wbr>Polygon</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#modelname" class="tsd-kind-icon">model<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_models_map_model_.imapmodel.html#outerpolygon" class="tsd-kind-icon">outer<wbr>Polygon</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#schema" class="tsd-kind-icon">schema</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#__v" class="tsd-kind-icon">__v</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#base" class="tsd-kind-icon">base</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#basemodelname" class="tsd-kind-icon">base<wbr>Model<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#collection" class="tsd-kind-icon">collection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#db" class="tsd-kind-icon">db</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#discriminators" class="tsd-kind-icon">discriminators</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#modelname" class="tsd-kind-icon">model<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipolymodel.html#points" class="tsd-kind-icon">points</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#schema" class="tsd-kind-icon">schema</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#emit" class="tsd-kind-icon">emit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#increment" class="tsd-kind-icon">increment</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#isdeleted" class="tsd-kind-icon">is<wbr>Deleted</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#listeners" class="tsd-kind-icon">listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#model" class="tsd-kind-icon">model</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#off" class="tsd-kind-icon">off</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#once" class="tsd-kind-icon">once</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#remove" class="tsd-kind-icon">remove</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#save" class="tsd-kind-icon">save</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_models_map_model_.imapmodel.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#increment" class="tsd-kind-icon">increment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#isdeleted" class="tsd-kind-icon">is<wbr>Deleted</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#model" class="tsd-kind-icon">model</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#off" class="tsd-kind-icon">off</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#remove" class="tsd-kind-icon">remove</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#save" class="tsd-kind-icon">save</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="ipolymodel.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
 							</ul>
 						</section>
 					</div>
@@ -148,7 +142,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Document.__v</p>
 						<ul>
-							<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3261</li>
+							<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3261</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -165,7 +159,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.base</p>
 						<ul>
-							<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3282</li>
+							<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3282</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -181,7 +175,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.baseModelName</p>
 						<ul>
-							<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3288</li>
+							<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3288</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -198,7 +192,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.collection</p>
 						<ul>
-							<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3291</li>
+							<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3291</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -214,7 +208,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.db</p>
 						<ul>
-							<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3294</li>
+							<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3294</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -230,7 +224,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.discriminators</p>
 						<ul>
-							<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3297</li>
+							<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3297</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -246,7 +240,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from MongooseDocumentOptionals.id</p>
 						<ul>
-							<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:1458</li>
+							<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:1458</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -258,21 +252,6 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="innerpolygon" class="tsd-anchor"></a>
-					<h3>inner<wbr>Polygon</h3>
-					<div class="tsd-signature tsd-kind-icon">inner<wbr>Polygon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><a href="_models_polygon_model_.ipolymodel.html" class="tsd-signature-type">IPolyModel</a><span class="tsd-signature-symbol">]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in Models/map.model.ts:12</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The inner polygons. A list of all the polygons inside the store, i.e. the shelves.</p>
-						</div>
-					</div>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="modelname" class="tsd-anchor"></a>
 					<h3>model<wbr>Name</h3>
@@ -280,7 +259,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.modelName</p>
 						<ul>
-							<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3300</li>
+							<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3300</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -290,17 +269,17 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="outerpolygon" class="tsd-anchor"></a>
-					<h3>outer<wbr>Polygon</h3>
-					<div class="tsd-signature tsd-kind-icon">outer<wbr>Polygon<span class="tsd-signature-symbol">:</span> <a href="_models_polygon_model_.ipolymodel.html" class="tsd-signature-type">IPolyModel</a></div>
+					<a name="points" class="tsd-anchor"></a>
+					<h3>points</h3>
+					<div class="tsd-signature tsd-kind-icon">points<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><a href="icoordmodel.html" class="tsd-signature-type">ICoordModel</a><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Models/map.model.ts:10</li>
+							<li>Defined in <a href="https://github.com/2019f46/leway-mapservice/blob/7d0cdf0/src/Models/polygon.model.ts#L26">Models/polygon.model.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The outer boundatires of the store, i.e. the walls.</p>
+							<p>List of points, that make up the polygon.</p>
 						</div>
 					</div>
 				</section>
@@ -311,7 +290,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.schema</p>
 						<ul>
-							<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3303</li>
+							<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3303</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -334,7 +313,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:567</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:567</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -379,7 +358,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.emit</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:577</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:577</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -406,7 +385,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.eventNames</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:582</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:582</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -424,7 +403,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.getMaxListeners</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:574</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:574</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -442,7 +421,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.increment</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3228</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3228</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -466,7 +445,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.isDeleted</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3237</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3237</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -486,7 +465,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.isDeleted</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3239</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3239</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -509,7 +488,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:578</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:578</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -533,7 +512,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.listeners</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:575</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:575</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -557,7 +536,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.model</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3234</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3234</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -589,7 +568,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.off</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:571</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:571</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -634,7 +613,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.on</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:568</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:568</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -679,7 +658,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.once</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:569</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:569</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -724,7 +703,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:580</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:580</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -769,7 +748,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:581</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:581</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -814,7 +793,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.rawListeners</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:576</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:576</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -838,7 +817,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.remove</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3245</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3245</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -891,7 +870,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.removeAllListeners</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:572</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:572</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -915,7 +894,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:570</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:570</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -961,7 +940,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.save</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3254</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3254</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1011,7 +990,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.save</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/mongoose/index.d.ts:3255</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/mongoose/index.d.ts:3255</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1056,7 +1035,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.setMaxListeners</p>
 								<ul>
-									<li>Defined in C:/Users/chris/git/backend/MapService/node_modules/@types/node/globals.d.ts:573</li>
+									<li>Defined in C:/Users/Eduar/Desktop/leway-mapservice/node_modules/@types/node/globals.d.ts:573</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1077,135 +1056,153 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_controllers_healthcontroller_.html">"<wbr>Controllers/health<wbr>Controller"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_controllers_mapcontroller_.html">"<wbr>Controllers/map<wbr>Controller"</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_models_map_model_.html">"<wbr>Models/map.model"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_models_polygon_model_.html">"<wbr>Models/polygon.model"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_app_.html">"app"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_server_.html">"server"</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/app.html" class="tsd-kind-icon">App</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/healthcontroller.html" class="tsd-kind-icon">Health<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="../classes/mapcontroller.html" class="tsd-kind-icon">Map<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="icoordmodel.html" class="tsd-kind-icon">ICoord<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="imapmodel.html" class="tsd-kind-icon">IMap<wbr>Model</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_models_map_model_.imapmodel.html" class="tsd-kind-icon">IMap<wbr>Model</a>
+					<li class="current tsd-kind-interface">
+						<a href="ipolymodel.html" class="tsd-kind-icon">IPoly<wbr>Model</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#__v" class="tsd-kind-icon">__v</a>
+								<a href="ipolymodel.html#__v" class="tsd-kind-icon">__v</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#base" class="tsd-kind-icon">base</a>
+								<a href="ipolymodel.html#base" class="tsd-kind-icon">base</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#basemodelname" class="tsd-kind-icon">base<wbr>Model<wbr>Name</a>
+								<a href="ipolymodel.html#basemodelname" class="tsd-kind-icon">base<wbr>Model<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#collection" class="tsd-kind-icon">collection</a>
+								<a href="ipolymodel.html#collection" class="tsd-kind-icon">collection</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#db" class="tsd-kind-icon">db</a>
+								<a href="ipolymodel.html#db" class="tsd-kind-icon">db</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#discriminators" class="tsd-kind-icon">discriminators</a>
+								<a href="ipolymodel.html#discriminators" class="tsd-kind-icon">discriminators</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#id" class="tsd-kind-icon">id</a>
+								<a href="ipolymodel.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="ipolymodel.html#modelname" class="tsd-kind-icon">model<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_models_map_model_.imapmodel.html#innerpolygon" class="tsd-kind-icon">inner<wbr>Polygon</a>
+								<a href="ipolymodel.html#points" class="tsd-kind-icon">points</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#modelname" class="tsd-kind-icon">model<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_models_map_model_.imapmodel.html#outerpolygon" class="tsd-kind-icon">outer<wbr>Polygon</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#schema" class="tsd-kind-icon">schema</a>
+								<a href="ipolymodel.html#schema" class="tsd-kind-icon">schema</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+								<a href="ipolymodel.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#emit" class="tsd-kind-icon">emit</a>
+								<a href="ipolymodel.html#emit" class="tsd-kind-icon">emit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+								<a href="ipolymodel.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+								<a href="ipolymodel.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#increment" class="tsd-kind-icon">increment</a>
+								<a href="ipolymodel.html#increment" class="tsd-kind-icon">increment</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#isdeleted" class="tsd-kind-icon">is<wbr>Deleted</a>
+								<a href="ipolymodel.html#isdeleted" class="tsd-kind-icon">is<wbr>Deleted</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
+								<a href="ipolymodel.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#listeners" class="tsd-kind-icon">listeners</a>
+								<a href="ipolymodel.html#listeners" class="tsd-kind-icon">listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#model" class="tsd-kind-icon">model</a>
+								<a href="ipolymodel.html#model" class="tsd-kind-icon">model</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#off" class="tsd-kind-icon">off</a>
+								<a href="ipolymodel.html#off" class="tsd-kind-icon">off</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#on" class="tsd-kind-icon">on</a>
+								<a href="ipolymodel.html#on" class="tsd-kind-icon">on</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#once" class="tsd-kind-icon">once</a>
+								<a href="ipolymodel.html#once" class="tsd-kind-icon">once</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+								<a href="ipolymodel.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
+								<a href="ipolymodel.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
+								<a href="ipolymodel.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#remove" class="tsd-kind-icon">remove</a>
+								<a href="ipolymodel.html#remove" class="tsd-kind-icon">remove</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+								<a href="ipolymodel.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+								<a href="ipolymodel.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#save" class="tsd-kind-icon">save</a>
+								<a href="ipolymodel.html#save" class="tsd-kind-icon">save</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_models_map_model_.imapmodel.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+								<a href="ipolymodel.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_models_map_model_.html#map" class="tsd-kind-icon">Map</a>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#coordschema" class="tsd-kind-icon">Coord<wbr>Schema</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_models_map_model_.html#mapschema" class="tsd-kind-icon">Map<wbr>Schema</a>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#map" class="tsd-kind-icon">Map</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#mapschema" class="tsd-kind-icon">Map<wbr>Schema</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#port" class="tsd-kind-icon">PORT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#polyschema" class="tsd-kind-icon">Poly<wbr>Schema</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#dbname" class="tsd-kind-icon">db<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#dbpassword" class="tsd-kind-icon">db<wbr>Password</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#dburl" class="tsd-kind-icon">db<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#dbuser" class="tsd-kind-icon">db<wbr>User</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#polygon" class="tsd-kind-icon">polygon</a>
 					</li>
 				</ul>
 			</nav>

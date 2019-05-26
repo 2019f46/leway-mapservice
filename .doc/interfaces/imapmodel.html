@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ICoordModel | mapservice</title>
+	<title>IMapModel | mapservice</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="icoordmodel.html">ICoordModel</a>
+					<a href="imapmodel.html">IMapModel</a>
 				</li>
 			</ul>
-			<h1>Interface ICoordModel</h1>
+			<h1>Interface IMapModel</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +69,9 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Coordinate interface, used to define the coordinates of the points in polygons.</p>
+						<p>Map model interface.
+							Contains the outerpolygon, which will define the boundaries of the store (walls),
+						and inner polygons, which is a list of polygons inside the store (shelves)</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +82,7 @@
 						<span class="tsd-signature-type">Document</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">ICoordModel</span>
+								<span class="target">IMapModel</span>
 							</li>
 						</ul>
 					</li>
@@ -93,42 +95,42 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#__v" class="tsd-kind-icon">__v</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#base" class="tsd-kind-icon">base</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#basemodelname" class="tsd-kind-icon">base<wbr>Model<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#collection" class="tsd-kind-icon">collection</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#db" class="tsd-kind-icon">db</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#discriminators" class="tsd-kind-icon">discriminators</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#modelname" class="tsd-kind-icon">model<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#schema" class="tsd-kind-icon">schema</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="icoordmodel.html#x" class="tsd-kind-icon">x</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="icoordmodel.html#y" class="tsd-kind-icon">y</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#__v" class="tsd-kind-icon">__v</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#base" class="tsd-kind-icon">base</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#basemodelname" class="tsd-kind-icon">base<wbr>Model<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#collection" class="tsd-kind-icon">collection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#db" class="tsd-kind-icon">db</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#discriminators" class="tsd-kind-icon">discriminators</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="imapmodel.html#innerpolygon" class="tsd-kind-icon">inner<wbr>Polygon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#modelname" class="tsd-kind-icon">model<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="imapmodel.html#outerpolygon" class="tsd-kind-icon">outer<wbr>Polygon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#schema" class="tsd-kind-icon">schema</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#emit" class="tsd-kind-icon">emit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#increment" class="tsd-kind-icon">increment</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#isdeleted" class="tsd-kind-icon">is<wbr>Deleted</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#listeners" class="tsd-kind-icon">listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#model" class="tsd-kind-icon">model</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#off" class="tsd-kind-icon">off</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#once" class="tsd-kind-icon">once</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#remove" class="tsd-kind-icon">remove</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#save" class="tsd-kind-icon">save</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="icoordmodel.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#increment" class="tsd-kind-icon">increment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#isdeleted" class="tsd-kind-icon">is<wbr>Deleted</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#model" class="tsd-kind-icon">model</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#off" class="tsd-kind-icon">off</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#remove" class="tsd-kind-icon">remove</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#save" class="tsd-kind-icon">save</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="imapmodel.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
 							</ul>
 						</section>
 					</div>
@@ -253,6 +255,21 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="innerpolygon" class="tsd-anchor"></a>
+					<h3>inner<wbr>Polygon</h3>
+					<div class="tsd-signature tsd-kind-icon">inner<wbr>Polygon<span class="tsd-signature-symbol">:</span> <a href="ipolymodel.html" class="tsd-signature-type">IPolyModel</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/2019f46/leway-mapservice/blob/7d0cdf0/src/Models/map.model.ts#L12">Models/map.model.ts:12</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The inner polygons. A list of all the polygons inside the store, i.e. the shelves.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="modelname" class="tsd-anchor"></a>
 					<h3>model<wbr>Name</h3>
@@ -269,6 +286,21 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="outerpolygon" class="tsd-anchor"></a>
+					<h3>outer<wbr>Polygon</h3>
+					<div class="tsd-signature tsd-kind-icon">outer<wbr>Polygon<span class="tsd-signature-symbol">:</span> <a href="ipolymodel.html" class="tsd-signature-type">IPolyModel</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/2019f46/leway-mapservice/blob/7d0cdf0/src/Models/map.model.ts#L10">Models/map.model.ts:10</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The outer boundatires of the store, i.e. the walls.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="schema" class="tsd-anchor"></a>
 					<h3>schema</h3>
@@ -282,36 +314,6 @@
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Schema the model uses.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="x" class="tsd-anchor"></a>
-					<h3>x</h3>
-					<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/2019f46/leway-mapservice/blob/dbd5873/src/Models/polygon.model.ts#L6">Models/polygon.model.ts:6</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The X coordinate</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="y" class="tsd-anchor"></a>
-					<h3>y</h3>
-					<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/2019f46/leway-mapservice/blob/dbd5873/src/Models/polygon.model.ts#L8">Models/polygon.model.ts:8</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The Y coordinate</p>
 						</div>
 					</div>
 				</section>
@@ -1085,111 +1087,111 @@
 					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="../classes/mapcontroller.html" class="tsd-kind-icon">Map<wbr>Controller</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="icoordmodel.html" class="tsd-kind-icon">ICoord<wbr>Model</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="icoordmodel.html" class="tsd-kind-icon">ICoord<wbr>Model</a>
+						<a href="imapmodel.html" class="tsd-kind-icon">IMap<wbr>Model</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#__v" class="tsd-kind-icon">__v</a>
+								<a href="imapmodel.html#__v" class="tsd-kind-icon">__v</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#base" class="tsd-kind-icon">base</a>
+								<a href="imapmodel.html#base" class="tsd-kind-icon">base</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#basemodelname" class="tsd-kind-icon">base<wbr>Model<wbr>Name</a>
+								<a href="imapmodel.html#basemodelname" class="tsd-kind-icon">base<wbr>Model<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#collection" class="tsd-kind-icon">collection</a>
+								<a href="imapmodel.html#collection" class="tsd-kind-icon">collection</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#db" class="tsd-kind-icon">db</a>
+								<a href="imapmodel.html#db" class="tsd-kind-icon">db</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#discriminators" class="tsd-kind-icon">discriminators</a>
+								<a href="imapmodel.html#discriminators" class="tsd-kind-icon">discriminators</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#id" class="tsd-kind-icon">id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#modelname" class="tsd-kind-icon">model<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#schema" class="tsd-kind-icon">schema</a>
+								<a href="imapmodel.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="icoordmodel.html#x" class="tsd-kind-icon">x</a>
+								<a href="imapmodel.html#innerpolygon" class="tsd-kind-icon">inner<wbr>Polygon</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="imapmodel.html#modelname" class="tsd-kind-icon">model<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="icoordmodel.html#y" class="tsd-kind-icon">y</a>
+								<a href="imapmodel.html#outerpolygon" class="tsd-kind-icon">outer<wbr>Polygon</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="imapmodel.html#schema" class="tsd-kind-icon">schema</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+								<a href="imapmodel.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#emit" class="tsd-kind-icon">emit</a>
+								<a href="imapmodel.html#emit" class="tsd-kind-icon">emit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+								<a href="imapmodel.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+								<a href="imapmodel.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#increment" class="tsd-kind-icon">increment</a>
+								<a href="imapmodel.html#increment" class="tsd-kind-icon">increment</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#isdeleted" class="tsd-kind-icon">is<wbr>Deleted</a>
+								<a href="imapmodel.html#isdeleted" class="tsd-kind-icon">is<wbr>Deleted</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
+								<a href="imapmodel.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#listeners" class="tsd-kind-icon">listeners</a>
+								<a href="imapmodel.html#listeners" class="tsd-kind-icon">listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#model" class="tsd-kind-icon">model</a>
+								<a href="imapmodel.html#model" class="tsd-kind-icon">model</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#off" class="tsd-kind-icon">off</a>
+								<a href="imapmodel.html#off" class="tsd-kind-icon">off</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#on" class="tsd-kind-icon">on</a>
+								<a href="imapmodel.html#on" class="tsd-kind-icon">on</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#once" class="tsd-kind-icon">once</a>
+								<a href="imapmodel.html#once" class="tsd-kind-icon">once</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+								<a href="imapmodel.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
+								<a href="imapmodel.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
+								<a href="imapmodel.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#remove" class="tsd-kind-icon">remove</a>
+								<a href="imapmodel.html#remove" class="tsd-kind-icon">remove</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+								<a href="imapmodel.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+								<a href="imapmodel.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#save" class="tsd-kind-icon">save</a>
+								<a href="imapmodel.html#save" class="tsd-kind-icon">save</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="icoordmodel.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+								<a href="imapmodel.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="imapmodel.html" class="tsd-kind-icon">IMap<wbr>Model</a>
-					</li>
 					<li class=" tsd-kind-interface">
 						<a href="ipolymodel.html" class="tsd-kind-icon">IPoly<wbr>Model</a>
 					</li>
